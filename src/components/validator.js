@@ -20,9 +20,8 @@ export const validator = (data, type) => {
       data.password
     )
   ) {
-    errors.password(
-      "Password most contain at least one  alphabetical, digit and special character!"
-    );
+    errors.password =
+      "Password most contain at least one  alphabetical, digit and special character!";
   } else {
     delete errors.password;
   }
@@ -47,8 +46,7 @@ export const validator = (data, type) => {
     if (data.isAccepted) {
       delete errors.isAccepted;
     } else {
-      errors.isAccepted =
-        "You must accept our privacy policy!";
+      errors.isAccepted = "You must accept our privacy policy!";
     }
   }
 

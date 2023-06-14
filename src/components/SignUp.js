@@ -6,7 +6,6 @@ import { notify } from "./toast";
 import styles from "./SignUp.module.css";
 import { AwesomeButton } from "react-awesome-button";
 import { Link } from "react-router-dom";
-import AwesomeButtonStyles from "react-awesome-button/src/styles/styles.scss";
 
 const SignUp = () => {
   const [data, setData] = useState({
@@ -152,7 +151,7 @@ const SignUp = () => {
         <div className={styles.buttons}>
           <Link to="/login">Login</Link>
           <AwesomeButton type="secondary" onClick={submitHandler}>
-            Login
+            Sign Up
           </AwesomeButton>
         </div>
       </form>
